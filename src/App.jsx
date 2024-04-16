@@ -8,7 +8,7 @@ import About from './About';
 const App = () => {
     return (
         <Router>
-            <Layout>
+            <Layout> {/* Use the Layout component */}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

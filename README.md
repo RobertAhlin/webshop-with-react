@@ -17,6 +17,30 @@ The project can be found at this repo: https://github.com/RobertAhlin/webshop-wi
 4. Started the application with ```npm run dev```
 5. Used the Google Chrome browser at http://localhost:5173/ to view the running app.
 
+## API
+DummyJSON Products API  
+The DummyJSON Products API is a simple API that provides access to a collection of dummy products. It is designed for testing and development purposes, providing a variety of mock product data that can be used in applications.
+
+### Base URL
+The base URL for accessing the API is: ```https://dummyjson.com/products/```
+
+### Endpoints
+
+### Fetch All Products
+- **Description:** Retrieves all products available in the database.
+- **HTTP Method:** GET
+- **URL:** `/products/`
+- **Response:** A JSON object containing an array of products.
+
+### Fetch Product by ID
+- **Description:** Retrieves a specific product by its unique identifier.
+- **HTTP Method:** GET
+- **URL:** `/products/{id}`
+- **Parameters:**
+  - `{id}`: The unique identifier of the product.
+- **Response:** A JSON object representing the product with the specified ID.
+
+
 ## Layout
 Started to build a simple layout. using a header, footer, sidebar and a home area.
 - **Header**  
