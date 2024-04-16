@@ -38,19 +38,19 @@ const Products = () => {
     return (
         <div>
             <h2>Featured Products</h2>
-    <ul>
-        {products.map(product => (
-            <li key={product.id} className='product-container'>
-                <Link to={`/product/${product.id}`}>
-                    <div>
-                    <img src={`https://dummyjson.com/image/150/797979?text=${product.title}!&fontSize=10`} alt={product.title} className="product-image" />
-                        <div>{product.title}</div>
-                        <div>USD {product.price}</div>
-                    </div>
-                </Link>
-            </li>
-        ))}
-    </ul>
+            <ul className='product-list'>
+                {products.map(product => (
+                    <li key={product.id} className='product-container'>
+                        <Link to={`/product/${product.id}`}>
+                            <div>
+                                <img src={`https://dummyjson.com/image/150/CCCCCC?text=${product.title}!&fontSize=10`} alt={product.title} className="product-image" />
+                                <div>{product.title}</div>
+                                <div>USD {product.price}</div>
+                            </div>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };
