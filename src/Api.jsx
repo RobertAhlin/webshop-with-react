@@ -1,15 +1,16 @@
-// Api.jsx
-
 // Define a function to fetch products from the DummyJSON API
 export async function fetchProducts() {
     try {
         // Make the fetch request to the API endpoint for the specified category
         const response = await fetch(`https://dummyjson.com/products/`);
 
-        // Log the response status and data
-        console.log('Response status:', response.status);
+        // Check if the request was successful
+        if (!response.ok) {
+            throw new Error('Failed to fetch products');
+        }
+
+        // Parse the JSON response
         const data = await response.json();
-        console.log('Fetched data:', data);
 
         // Return the product data
         return data.products;
