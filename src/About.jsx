@@ -1,4 +1,4 @@
-// About.js
+// About.jsx
 import React from 'react';
 
 const About = () => {

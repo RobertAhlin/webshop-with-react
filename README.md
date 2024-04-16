@@ -1,5 +1,5 @@
 # Webshop project
-This is a webshop project to be used for learning to handle React during educaion in Full stack development att Företagsuniversitet.
+This is a webshop project to be used for learning to handle React during educaion in Full stack development at Företagsuniversitet.
 
 # Github
 The project can be found at this repo: https://github.com/RobertAhlin/webshop-with-react.
@@ -18,5 +18,5 @@ The project can be found at this repo: https://github.com/RobertAhlin/webshop-wi
 
 # Credits
 - https://reactrouter.com/en/main
-- chat.openai.com
+- https://chat.openai.com
 - https://vitejs.dev/

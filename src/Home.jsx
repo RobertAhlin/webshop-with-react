@@ -1,14 +1,17 @@
-// Home.js
+// Home.jsx
+
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div>
-            <h2>Home</h2>
-            <p>Welcome to the home page!</p>
-            {/* Link to the About page */}
-            <Link to="/about">Go to About page</Link>
+            {/* Add featured products section, categories section, product grid */}
+            <h2>Featured Products</h2>
+            {/* Featured products section */}
+            <h2>Categories</h2>
+            {/* Categories section */}
+            <h2>Products</h2>
+            {/* Product grid */}
         </div>
     );
 };
