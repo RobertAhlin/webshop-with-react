@@ -4,9 +4,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
-            {/* Add footer content here */}
-            &copy; 2024 Your Company Name
+        <footer className="center">
+            <p>Footer</p>
+            &copy; 2024 Robstar
         </footer>
     );
 };

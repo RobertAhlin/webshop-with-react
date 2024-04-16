@@ -1,14 +1,12 @@
-// Header.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header>
-            <div className="logo">Your Logo Here</div>
+        <header className="center"> {/* Add center class */}
+            <div className="logo">Header</div>
             <nav>
-                <ul>
+                <ul className="nav-links"> {/* Add nav-links class */}
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
                     {/* Add more navigation links as needed */}

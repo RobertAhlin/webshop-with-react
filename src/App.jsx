@@ -1,20 +1,19 @@
 // App.jsx
-
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
+import Layout from './Layout';
 import Home from './Home';
 import About from './About';
 
 const App = () => {
     return (
         <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-            </Routes>
-            <Footer />
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </Layout>
         </Router>
     );
 };
