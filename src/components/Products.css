@@ -1,0 +1,21 @@
+/* Product.css */
+
+.product-container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+    width: 150px; /* Adjust size as needed */
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.product-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 8px;
+    object-fit: cover;
+}

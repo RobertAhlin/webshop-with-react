@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchProducts } from '../Api';
+import './Products.css';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -39,10 +40,10 @@ const Products = () => {
             <h2>Featured Products</h2>
     <ul>
         {products.map(product => (
-            <li key={product.id}>
+            <li key={product.id} className='product-container'>
                 <Link to={`/product/${product.id}`}>
                     <div>
-                    <img src={`https://dummyjson.com/image/150/797979?text=${product.title}!&fontSize=10`} alt={product.title} />
+                    <img src={`https://dummyjson.com/image/150/797979?text=${product.title}!&fontSize=10`} alt={product.title} className="product-image" />
                         <div>{product.title}</div>
                         <div>USD {product.price}</div>
                     </div>
