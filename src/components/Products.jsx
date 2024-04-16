@@ -37,7 +37,7 @@ const Products = () => {
 
     return (
         <div>
-            <h2>Featured Products</h2>
+            <h2 className='header'>Featured Products</h2>
             <ul className='product-list'>
                 {products.map(product => (
                     <li key={product.id} className='product-container'>
