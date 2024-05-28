@@ -16,7 +16,7 @@
 .modal-content {
     background: white;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     max-width: 500px;
     width: 100%;
     position: relative;
@@ -27,15 +27,15 @@
     top: 10px;
     right: 10px;
     background: none;
-    border: 2px solid transparent; /* Transparent border by default */
+    border: 2px solid transparent;
     font-size: 1em;
     cursor: pointer;
-    padding: 5px; /* Added padding for better hover effect */
+    padding: 5px;
     transition: border 0.3s ease-in-out;
 }
 
 .modal-close:hover {
-    border-color: black; /* Change border color on hover */
+    border-color: black !important;
 }
 
 

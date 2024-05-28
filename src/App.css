@@ -1,17 +1,5 @@
 /* App.css */
 
-.layout {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .sidebar {
   width: 250px;
@@ -40,10 +28,6 @@ main {
 
 .center {
   text-align: center;
-}
-
-.logo {
-  margin-bottom: 20px; /* Add some bottom margin to separate logo from nav */
 }
 
 .nav-links {
