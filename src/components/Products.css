@@ -5,7 +5,6 @@
     padding-left: 10px;
 }
 
-
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +20,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: box-shadow 0.3s ease-in-out;
     list-style-type: none;
+    cursor: pointer; /* Added cursor pointer */
 }
 
 .product-container:hover {
@@ -30,4 +30,47 @@
 .product-image {
     border-radius: 8px;
     object-fit: cover;
+    width: 100%; /* Ensure image fits the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal-product-image {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px;
 }

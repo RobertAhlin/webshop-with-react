@@ -1,20 +1,20 @@
 // Products.jsx
-
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { fetchProducts } from '../Api';
+import Modal from './Modal';
 import './Products.css';
+import './Modal.css';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     useEffect(() => {
-        // Fetch all products when the component mounts
         fetchProducts()
             .then(products => {
-                // Set the products state with the fetched products
                 setProducts(products);
                 setLoading(false);
             })
@@ -25,12 +25,20 @@ const Products = () => {
             });
     }, []);
 
-    // Check if there's an error
+    const openModal = (product) => {
+        setSelectedProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedProduct(null);
+    };
+
     if (error) {
         return <div>Error: {error.message}</div>;
     }
 
-    // Check if products are still being fetched
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -40,17 +48,16 @@ const Products = () => {
             <h2 className='header'>Featured Products</h2>
             <ul className='product-list'>
                 {products.map(product => (
-                    <li key={product.id} className='product-container'>
-                        <Link to={`/product/${product.id}`}>
-                            <div>
-                                <img src={`https://dummyjson.com/image/150/CCCCCC?text=${product.title}!&fontSize=10`} alt={product.title} className="product-image" />
-                                <div>{product.title}</div>
-                                <div>USD {product.price}</div>
-                            </div>
-                        </Link>
+                    <li key={product.id} className='product-container' onClick={() => openModal(product)}>
+                        <div>
+                            <img src={`https://dummyjson.com/image/150/CCCCCC?text=${product.title}!&fontSize=10`} alt={product.title} className="product-image" />
+                            <div>{product.title}</div>
+                            <div>USD {product.price}</div>
+                        </div>
                     </li>
                 ))}
             </ul>
+            <Modal isOpen={isModalOpen} onClose={closeModal} product={selectedProduct} />
         </div>
     );
 };
