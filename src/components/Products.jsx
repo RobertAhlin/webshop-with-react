@@ -1,4 +1,5 @@
 // src/components/Products.jsx
+
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/Api';
 import Modal from './Modal';
@@ -57,12 +58,7 @@ const Products = ({ addToCart }) => {
                     </li>
                 ))}
             </ul>
-            <Modal
-                isOpen={isModalOpen}
-                onClose={closeModal}
-                product={selectedProduct}
-                addToCart={addToCart}
-            />
+            <Modal isOpen={isModalOpen} onClose={closeModal} product={selectedProduct} addToCart={addToCart} />
         </div>
     );
 };

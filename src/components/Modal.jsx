@@ -1,3 +1,5 @@
+// src/components/Modal.jsx
+
 import React from 'react';
 import './Modal.css';
 
@@ -6,7 +8,6 @@ const Modal = ({ isOpen, onClose, product, addToCart }) => {
 
     const handleAddToCart = () => {
         addToCart(product);
-        // Do not call onClose here to keep the modal open
     };
 
     return (
