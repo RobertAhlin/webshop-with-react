@@ -1,9 +1,13 @@
-// src/components/Modal.jsx
 import React from 'react';
 import './Modal.css';
 
 const Modal = ({ isOpen, onClose, product, addToCart }) => {
     if (!isOpen) return null;
+
+    const handleAddToCart = () => {
+        addToCart(product);
+        // Do not call onClose here to keep the modal open
+    };
 
     return (
         <div className="modal-overlay">
@@ -15,7 +19,7 @@ const Modal = ({ isOpen, onClose, product, addToCart }) => {
                         <h2>{product.title}</h2>
                         <p>USD {product.price}</p>
                         <p>{product.description}</p>
-                        <button onClick={() => { addToCart(product); onClose(); }}>Add to cart</button>
+                        <button onClick={handleAddToCart}>Add to cart</button>
                     </div>
                 )}
             </div>
