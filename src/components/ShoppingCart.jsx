@@ -12,16 +12,18 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
             <ul>
                 {cartItems.map((item, index) => (
                     <li key={index} className="cart-item">
-                        <div className="cart-item-details">
-                            <div className="cart-item-title">
-                                <button onClick={() => adjustQuantity(index, -1)}>-</button>
-                                {item.count} x {item.title}
-                                <button onClick={() => adjustQuantity(index, 1)}>+</button>
-                            </div>
-                            <div className="cart-item-price">USD {item.price}</div>
-                        </div>
+                    <div className="cart-item-details">
+                        <div className="cart-item-title">{item.count} x {item.title}</div>
+                        <div className="cart-item-price">USD {(item.price * item.count).toFixed(2)}</div>
+                    </div>
+                    
+                    <div className="quantity-controls">
+                        <button className="plus-quantity-button" onClick={() => adjustQuantity(index, 1)}>+</button>
+                        <button className="minus-quantity-button" onClick={() => adjustQuantity(index, -1)}>-</button>
                         <button className="remove-button" onClick={() => removeFromCart(index)}>🗑️</button>
-                    </li>
+                    </div>
+                    
+                </li>
                 ))}
             </ul>
         </div>
@@ -29,3 +31,5 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
 };
 
 export default ShoppingCart;
+// src/components/ShoppingCart.jsx
+
