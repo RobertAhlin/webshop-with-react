@@ -33,3 +33,14 @@
     width: 100%; /* Ensure image fits the container */
     height: auto; /* Maintain aspect ratio */
 }
+
+.show-more-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 6vw;
+}
+
+.show-more-button {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
