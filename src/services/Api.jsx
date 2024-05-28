@@ -1,3 +1,4 @@
+// Api.jsx
 // Define a function to fetch products from the DummyJSON API
 export async function fetchProducts() {
     try {

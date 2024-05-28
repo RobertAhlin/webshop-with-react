@@ -1,6 +1,6 @@
 // Products.jsx
 import { useEffect, useState } from 'react';
-import { fetchProducts } from '../Api';
+import { fetchProducts } from '../services/Api';
 import Modal from './Modal';
 import './Products.css';
 import './Modal.css';
