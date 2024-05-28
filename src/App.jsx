@@ -5,8 +5,6 @@ import About from './pages/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
-import AddToCartButton from './components/AddToCartButton';
-import RemoveFromCartButton from './components/RemoveFromCartButton';
 import './App.css';
 
 const App = () => {
@@ -19,7 +17,7 @@ const App = () => {
         }
     }, []);
 
-    const handleAddToCart = (product) => {
+    const addToCart = (product) => {
         const itemIndex = cartItems.findIndex((item) => item.id === product.id);
         if (itemIndex !== -1) {
             const updatedCartItems = [...cartItems];
@@ -33,20 +31,31 @@ const App = () => {
         }
     };
 
-    const handleRemoveFromCart = (index) => {
+    const removeFromCart = (index) => {
         const updatedCartItems = cartItems.filter((_, i) => i !== index);
         setCartItems(updatedCartItems);
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    };
+
+    const adjustQuantity = (index, amount) => {
+        const updatedCartItems = [...cartItems];
+        updatedCartItems[index].count += amount;
+        if (updatedCartItems[index].count <= 0) {
+            removeFromCart(index);
+        } else {
+            setCartItems(updatedCartItems);
+            localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+        }
     };
 
     return (
         <Router>
             <div className="layout">
                 <Header />
-                <Sidebar cartItems={cartItems} removeFromCart={handleRemoveFromCart} />
+                <Sidebar cartItems={cartItems} removeFromCart={removeFromCart} adjustQuantity={adjustQuantity} />
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home addToCart={handleAddToCart} />} />
+                        <Route path="/" element={<Home addToCart={addToCart} />} />
                         <Route path="/about" element={<About />} />
                     </Routes>
                 </main>

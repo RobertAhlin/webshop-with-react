@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShoppingCart.css';
 
-const ShoppingCart = ({ cartItems, removeFromCart }) => {
+const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
     // Calculate total sum of prices
     const totalSum = cartItems.reduce((total, item) => total + (item.price * item.count), 0);
 
@@ -13,7 +13,11 @@ const ShoppingCart = ({ cartItems, removeFromCart }) => {
                 {cartItems.map((item, index) => (
                     <li key={index} className="cart-item">
                         <div className="cart-item-details">
-                            <div className="cart-item-title">{item.count} x {item.title}</div>
+                            <div className="cart-item-title">
+                                <button onClick={() => adjustQuantity(index, -1)}>-</button>
+                                {item.count} x {item.title}
+                                <button onClick={() => adjustQuantity(index, 1)}>+</button>
+                            </div>
                             <div className="cart-item-price">USD {item.price}</div>
                         </div>
                         <button className="remove-button" onClick={() => removeFromCart(index)}>🗑️</button>
