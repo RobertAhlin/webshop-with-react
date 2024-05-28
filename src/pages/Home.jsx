@@ -1,12 +1,11 @@
-// Home.jsx
-
+// src/pages/Home.jsx
 import React from 'react';
 import Products from '../components/Products';
 
-const Home = () => {
+const Home = ({ addToCart }) => {
     return (
         <div>
-            <Products />
+            <Products addToCart={addToCart} />
         </div>
     );
 };

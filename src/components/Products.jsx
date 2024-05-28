@@ -1,11 +1,11 @@
-// Products.jsx
+// src/components/Products.jsx
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/Api';
 import Modal from './Modal';
 import './Products.css';
 import './Modal.css';
 
-const Products = () => {
+const Products = ({ addToCart }) => {
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -57,7 +57,12 @@ const Products = () => {
                     </li>
                 ))}
             </ul>
-            <Modal isOpen={isModalOpen} onClose={closeModal} product={selectedProduct} />
+            <Modal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                product={selectedProduct}
+                addToCart={addToCart}
+            />
         </div>
     );
 };

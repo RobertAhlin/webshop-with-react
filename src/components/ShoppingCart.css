@@ -1,0 +1,27 @@
+/* src/components/ShoppingCart.css */
+
+.shopping-cart {
+    padding: 20px;
+}
+
+.shopping-cart h2 {
+    margin-top: 0;
+}
+
+.shopping-cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shopping-cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.shopping-cart button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}

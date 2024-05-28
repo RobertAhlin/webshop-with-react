@@ -1,11 +1,13 @@
-// Sidebar.jsx
+// src/components/Sidebar.jsx
 import React from 'react';
+import './Sidebar.css';
+import ShoppingCart from './ShoppingCart';
 
-const Sidebar = () => {
+const Sidebar = ({ cartItems, removeFromCart }) => {
     return (
-        <aside className="sidebar">
-            <p>Sidebar</p>
-        </aside>
+        <div className="sidebar">
+            <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} />
+        </div>
     );
 };
 
