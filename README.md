@@ -55,11 +55,53 @@ This is where to display the shopping cart where it should be easy to overview w
 
 ## Components
 - **AddToCartButton**
+The AddToCartButton component is a React component that renders a button. When clicked, it adds a given product to the cart. It takes two props: product (the item to add) and addToCart (the function to handle adding the item). The button's onClick event triggers the addToCart function with the product as an argument.
 - **Footer**
 - **Header**
 - **Modal**
-- **OrderSummary**
-- ****
+The Modal component is a React component that displays a modal dialog for a product. It accepts four props: isOpen, onClose, product, and addToCart.  
+If isOpen is false, the component returns null and nothing is rendered.  
+When open, it displays a modal overlay with the product's image, title, price, and description.  
+There are two buttons: one to close the modal (triggers onClose) and one to add the product to the cart (triggers addToCart with the product as an argument).  
+The component imports its styles from Modal.css.
+- **Products**
+The Products component is a React component that displays a list of products and includes a modal for viewing product details. Here's a summary of its functionality:  
+**State Management:**  
+products: Stores the list of fetched products.  
+error: Stores any error that occurs during the fetching process.  
+loading: Indicates whether the products are currently being fetched.  
+isModalOpen: Controls the visibility of the modal.  
+selectedProduct: Stores the product currently selected to view in the modal.  
+displayedProducts: Controls how many products are initially displayed and loaded per page.  
+**Effects:**  
+useEffect: Fetches products from an API when the component mounts, setting products and handling loading and error states.  
+openModal: Opens the modal and sets the selected product.  
+closeModal: Closes the modal and clears the selected product.  
+handleShowMore: Increases the number of displayed products by a predefined number (productsPerPage).  
+**Rendering:**  
+Displays a loading message if products are being fetched.  
+Displays an error message if fetching fails.  
+Renders a list of products, each product clickable to open the modal with its details.  
+Includes a "Show more" button to load more products if there are more to display.  
+Uses the Modal component to show product details and handle adding the product to the cart.  
+The component also imports its styles from Products.css and Modal.css and the Modal component from Modal.jsx.  
+- **RemoveFromCartButton**
+The RemoveFromCartButton component renders a button that, when clicked, removes an item from the cart by calling the removeFromCart function with the specified item index.
+- **ShoppingCart**
+The ShoppingCart component renders a list of cart items with options to adjust their quantities or remove them entirely, and it shows the total price of the items in the cart.
+**Props:**
+cartItems: An array of items in the cart.  
+removeFromCart: A function to remove an item from the cart.  
+adjustQuantity: A function to adjust the quantity of an item in the cart.  
+**Total Calculation:**
+Calculates the total sum of all item prices in the cart.
+**Rendering:**
+Displays the total price of items in the cart.  
+Renders a list of cart items, each showing the item count, title, and total price.   
+Includes buttons for adjusting the quantity of each item and a button to remove the item from the cart.  
+
+- **Sidebar**
+The Sidebar component renders a sidebar that includes the ShoppingCart component, displaying the items in the cart along with options to adjust their quantities or remove them.
 
 # Credits
 - https://reactrouter.com/en/main
