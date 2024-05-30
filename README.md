@@ -6,8 +6,9 @@ The project can be found at this repo: https://github.com/RobertAhlin/webshop-wi
 
 ### Clone repo.
 1. Use ```https://github.com/RobertAhlin/webshop-with-react.git``` to clone it with for example VS Code.
-2. Whe cloned, run ```npm install``` to get all dependencies.
+2. When cloned, run ```npm install``` to get all dependencies.
 3. Start application with ```npm run dev```
+4. Open browser and got to url: http://localhost:5173/.
 
 # Development
 ## Installation
@@ -50,8 +51,15 @@ No plan yet, but perhaps some social media links?
 - **Home**  
 Just the main area where to navigate products. Aiming to use pagination.
 - **Sidebar**  
-This is where I plan to display the shopping cart where it should be easy to overview what's been added. Also easy to edit amount and remove products.
+This is where to display the shopping cart where it should be easy to overview what's been added. Also easy to edit amount and remove products.
 
+## Components
+- **AddToCartButton**
+- **Footer**
+- **Header**
+- **Modal**
+- **OrderSummary**
+- ****
 
 # Credits
 - https://reactrouter.com/en/main
