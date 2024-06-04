@@ -113,3 +113,16 @@ The Sidebar component renders a sidebar that includes the ShoppingCart component
 - https://reactrouter.com/en/main
 - https://chat.openai.com
 - https://vitejs.dev/
+
+# Future development
+
+### Notification messages
+* Item added to shopping cart.
+* Item has been deleted from shopping cart.
+
+### Warning questions
+* Ask user to confirm deletion of item from shopping cart. (Both from trash can button and decreasing number of items from 1 to 0.)
+
+### Pages
+* Contact page with forms.
+* Track order progress page.
