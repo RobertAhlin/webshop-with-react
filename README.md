@@ -128,3 +128,6 @@ The Sidebar component renders a sidebar that includes the ShoppingCart component
 * Order page.
   * User shoud be able to fill in shipping and payment details and complete the order.
 * Track order progress page.
+
+### Responsiveness
+Even if some level of responsivness is available. The resoponsiveness can be tested and improved for smaller devices such as mobile phones.
