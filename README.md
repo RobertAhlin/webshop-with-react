@@ -125,4 +125,6 @@ The Sidebar component renders a sidebar that includes the ShoppingCart component
 
 ### Pages
 * Contact page with forms.
+* Order page.
+  * User shoud be able to fill in shipping and payment details and complete the order.
 * Track order progress page.
