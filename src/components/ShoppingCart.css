@@ -77,3 +77,20 @@
     align-items: center;
 }
 
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}

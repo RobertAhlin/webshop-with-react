@@ -1,22 +1,29 @@
-webshop-witg-react/
+webshop-with-react/
 ├── public/
-│   └── index.html
+│   ├── index.html
+│   └──...
 ├── src/
+│   ├── assets/
 │   ├── components/
-│   │   ├── ProductList.js
-│   │   ├── Product.js
-│   │   ├── ProductDetail.js
-│   │   ├── ShoppingCart.js
-│   │   └── OrderSummary.js
+│   │   ├── AddToCartButton.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Modal.css
+│   │   ├── Modal.jsx
+│   │   ├── Products.css
+│   │   ├── Products.jsx
+│   │   ├── RemoveFromCartButton.jsx
+│   │   ├── ShoppingCart.css
+│   │   ├── ShoppingCart.jsx
+│   │   ├── Sidebar.css
+│   │   └── Sidebar.jsx
 │   ├── pages/
-│   │   ├── Home.js
-│   │   ├── ProductPage.js
-│   │   ├── ShoppingCartPage.js
-│   │   └── OrderSummaryPage.js
-│   ├── App.js -
+│   │   ├── About.jsx
+│   │   └── Home.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
 │   └── index.js
-│  
-├── styles/
-│   ├── main.css
-│   └── ...
-└── README.md
+├── index.html
+├── README.md
+└── ...

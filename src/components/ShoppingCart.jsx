@@ -1,4 +1,6 @@
+// src/components/ShoppingCart.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ShoppingCart.css';
 
 const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
@@ -9,21 +11,25 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
         <div className="shopping-cart">
             <h2>Shopping Cart</h2>
             <p>Total: USD {totalSum.toFixed(2)}</p>
+            <div className="checkout-container">
+                <Link to="/checkout">
+                    <button className="checkout-button">Checkout</button>
+                </Link>
+            </div>
             <ul>
                 {cartItems.map((item, index) => (
                     <li key={index} className="cart-item">
-                    <div className="cart-item-details">
-                        <div className="cart-item-title">{item.count} x {item.title}</div>
-                        <div className="cart-item-price">USD {(item.price * item.count).toFixed(2)}</div>
-                    </div>
-                    
-                    <div className="quantity-controls">
-                        <button className="plus-quantity-button" onClick={() => adjustQuantity(index, 1)}>+</button>
-                        <button className="minus-quantity-button" onClick={() => adjustQuantity(index, -1)}>-</button>
-                        <button className="remove-button" onClick={() => removeFromCart(index)}>🗑️</button>
-                    </div>
-                    
-                </li>
+                        <div className="cart-item-details">
+                            <div className="cart-item-title">{item.count} x {item.title}</div>
+                            <div className="cart-item-price">USD {(item.price * item.count).toFixed(2)}</div>
+                        </div>
+
+                        <div className="quantity-controls">
+                            <button className="plus-quantity-button" onClick={() => adjustQuantity(index, 1)}>+</button>
+                            <button className="minus-quantity-button" onClick={() => adjustQuantity(index, -1)}>-</button>
+                            <button className="remove-button" onClick={() => removeFromCart(index)}>🗑️</button>
+                        </div>
+                    </li>
                 ))}
             </ul>
         </div>
@@ -31,5 +37,3 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
 };
 
 export default ShoppingCart;
-// src/components/ShoppingCart.jsx
-

@@ -1,7 +1,9 @@
+// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Checkout from './pages/Checkout';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
@@ -57,6 +59,7 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home addToCart={addToCart} />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/checkout" element={<Checkout />} />
                     </Routes>
                 </main>
                 <Footer />
