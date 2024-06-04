@@ -1,12 +1,11 @@
 // src/pages/Checkout.jsx
 import React from 'react';
+import OrderSummary from '../components/OrderSummary';
 
-const Checkout = () => {
+const Checkout = ({ cartItems }) => {
     return (
         <div className="checkout">
-            <h2>Checkout</h2>
-            <p>Order Summary:</p>
-            {/* Add order summary details here */}
+            <OrderSummary cartItems={cartItems} />
         </div>
     );
 };
