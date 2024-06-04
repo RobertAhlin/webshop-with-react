@@ -1,9 +1,9 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Checkout from './pages/Checkout';
+import Checkout from './pages/Checkout'; // Import Checkout component
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
@@ -50,22 +50,30 @@ const App = () => {
         }
     };
 
+    const location = useLocation(); // Use useLocation to get the current path
+
     return (
-        <Router>
-            <div className="layout">
-                <Header />
+        <div className="layout">
+            <Header />
+            {location.pathname !== '/checkout' && (
                 <Sidebar cartItems={cartItems} removeFromCart={removeFromCart} adjustQuantity={adjustQuantity} />
-                <main>
-                    <Routes>
-                        <Route path="/" element={<Home addToCart={addToCart} />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/checkout" element={<Checkout cartItems={cartItems} />} />
-                    </Routes>
-                </main>
-                <Footer />
-            </div>
-        </Router>
+            )}
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home addToCart={addToCart} />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/checkout" element={<Checkout cartItems={cartItems} />} /> {/* Add Checkout route */}
+                </Routes>
+            </main>
+            <Footer />
+        </div>
     );
 };
 
-export default App;
+const AppWrapper = () => (
+    <Router>
+        <App />
+    </Router>
+);
+
+export default AppWrapper;

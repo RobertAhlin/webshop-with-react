@@ -4,7 +4,8 @@ import OrderSummary from '../components/OrderSummary';
 
 const Checkout = ({ cartItems }) => {
     return (
-        <div className="checkout">
+        <div className="checkout-page">
+            <h2>Order Summary</h2>
             <OrderSummary cartItems={cartItems} />
         </div>
     );

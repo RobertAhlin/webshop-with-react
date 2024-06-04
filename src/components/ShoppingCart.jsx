@@ -11,11 +11,7 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
         <div className="shopping-cart">
             <h2>Shopping Cart</h2>
             <p>Total: USD {totalSum.toFixed(2)}</p>
-            <div className="checkout-container">
-                <Link to="/checkout">
-                    <button className="checkout-button">Checkout</button>
-                </Link>
-            </div>
+            <Link to="/checkout" className="checkout-button">Proceed to Checkout</Link> {/* Added button */}
             <ul>
                 {cartItems.map((item, index) => (
                     <li key={index} className="cart-item">
@@ -23,7 +19,6 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
                             <div className="cart-item-title">{item.count} x {item.title}</div>
                             <div className="cart-item-price">USD {(item.price * item.count).toFixed(2)}</div>
                         </div>
-
                         <div className="quantity-controls">
                             <button className="plus-quantity-button" onClick={() => adjustQuantity(index, 1)}>+</button>
                             <button className="minus-quantity-button" onClick={() => adjustQuantity(index, -1)}>-</button>
