@@ -1,4 +1,14 @@
-/* App.css */
+
+/* src/App.css */
+
+/* Apply the background image to the root container */
+body {
+  background-image: url('./assets/webshop-background.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Fix the background image in place */
+  /* You can adjust other background properties as needed */
+}
 
 .sidebar {
   width: 250px;

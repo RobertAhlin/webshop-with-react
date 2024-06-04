@@ -11,7 +11,7 @@ const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
         <div className="shopping-cart">
             <h2>Shopping Cart</h2>
             <p>Total: USD {totalSum.toFixed(2)}</p>
-            <Link to="/checkout" className="checkout-button">Proceed to Checkout</Link> {/* Added button */}
+            <Link to="/checkout" className="checkout-button">Checkout</Link>
             <ul>
                 {cartItems.map((item, index) => (
                     <li key={index} className="cart-item">
