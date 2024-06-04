@@ -114,6 +114,12 @@ The Sidebar component renders a sidebar that includes the ShoppingCart component
 - https://chat.openai.com
 - https://vitejs.dev/
 
+# To do
+(To do list items will be removed when done. New might be added from Future development section.)
+* Contact page with forms.
+* Order page.
+  * User shoud be able to fill in shipping and payment details and complete the order.
+
 # Future development
 
 ### Notification messages
