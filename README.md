@@ -22,7 +22,8 @@ The project can be found at this repo: https://github.com/RobertAhlin/webshop-wi
 First page directly shows the available items that is collected from DummyJson. The page present the first eighteen items, if user what to show more items there is a button "Show more..." That will display eighteen more, and so on.
 Clicking an item card will open a modal that will show more details about the item. And also it possible to add the item to the shopping cart. One item will be added. If add to cart is clicked again, the number of that item will increase in the the shopping cart. Closing the detail page of the item is done by clicking the "Close" button it top left corner.
 
-Shopping cart is visible and awailable as a sidebar to the right. Added items will be shown in a list where it is possible to increase or decrease the amount of each item the user wants to buy by clicking the "+" and "-" buttons. And also the option to delete an item from the shopping cart by clicking the "trash can" button.
+Shopping cart is visible and awailable as a sidebar to the right. Added items will be shown in a list where it is possible to increase or decrease the amount of each item the user wants to buy by clicking the "+" and "-" buttons. And also the option to delete an item from the shopping cart by clicking the "trash can" button.  
+At the top of the shopping cart above all items is the total sum of all the items added in the shopping cart.
 
 ## API
 DummyJSON Products API  
