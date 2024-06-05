@@ -21,6 +21,7 @@ const OrderSummary = ({ cartItems }) => {
             </ul>
             <div className="total-sum">
                 <strong>Total: USD {totalSum.toFixed(2)}</strong>
+                
             </div>
         </div>
     );
