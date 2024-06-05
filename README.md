@@ -22,10 +22,10 @@ The project can be found at this repo: https://github.com/RobertAhlin/webshop-wi
 First page directly shows the available items that is collected from DummyJson. The page present the first eighteen items, if user what to show more items there is a button "Show more..." That will display eighteen more, and so on.
 Clicking an item card will open a modal that will show more details about the item. And also it possible to add the item to the shopping cart. One item will be added. If add to cart is clicked again, the number of that item will increase in the the shopping cart. Closing the detail page of the item is done by clicking the "Close" button it top left corner.
 
-**Shopping cart** is visible and awailable as a sidebar to the right. Added items will be shown in a list where it is possible to increase or decrease the amount of each item the user wants to buy by clicking the "+" and "-" buttons. And also the option to delete an item from the shopping cart by clicking the "trash can" button.  
+**Shopping cart:** Is visible and awailable as a sidebar to the right. Added items will be shown in a list where it is possible to increase or decrease the amount of each item the user wants to buy by clicking the "+" and "-" buttons. And also the option to delete an item from the shopping cart by clicking the "trash can" button.  
 At the top of the shopping cart above all items is the total sum of all the items added in the shopping cart.
 
-**Checkout** When the items has been added to the shopping cart and the user wish to but the items. The user have to click on either the link "Checkout" in the navigation bar or on the checkout button int the shopping cart. This will take the user to the checkout page. The user can confirm the items added. When confirmed, the user can click "Purchase" button. This will open forms for shipping address and payment details. When the fields has been filled in the "Order Now" button will become active and the user can proceed with payment and placing the order.
+**Checkout:** When the items has been added to the shopping cart and the user wish to but the items. The user have to click on either the link "Checkout" in the navigation bar or on the checkout button int the shopping cart. This will take the user to the checkout page. The user can confirm the items added. When confirmed, the user can click "Purchase" button. This will open forms for shipping address and payment details. When the fields has been filled in the "Order Now" button will become active and the user can proceed with payment and placing the order.
 
 
 ## API
@@ -68,8 +68,8 @@ This is where to display the shopping cart where it should be easy to overview w
 The AddToCartButton component is a React component that renders a button. When clicked, it adds a given product to the cart. It takes two props: product (the item to add) and addToCart (the function to handle adding the item). The button's onClick event triggers the addToCart function with the product as an argument.
 - **Footer**  
 - **Header**  
-- **Modal**  
-The Modal component is a React component that displays a modal dialog for a product. It accepts four props: isOpen, onClose, product, and addToCart.  
+- **ProductDetailModal**  
+The ProductDetailModal component is a React component that displays a modal dialog for a product. It accepts four props: isOpen, onClose, product, and addToCart.  
 If isOpen is false, the component returns null and nothing is rendered.  
 When open, it displays a modal overlay with the product's image, title, price, and description.  
 There are two buttons: one to close the modal (triggers onClose) and one to add the product to the cart (triggers addToCart with the product as an argument).  
