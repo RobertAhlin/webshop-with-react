@@ -18,3 +18,26 @@
 .purchase-button:hover {
     background-color: #0056b3;
 }
+
+
+.order-now-button {
+    width: 500px;
+    display: block;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-size: 16px;
+    margin: 20px auto;
+}
+
+.order-now-button.active {
+    background-color: #28a745;
+    cursor: pointer;
+}
+
+.order-now-button:hover.active {
+    background-color: #218838;
+}

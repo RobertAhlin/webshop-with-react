@@ -1,0 +1,46 @@
+/* src/components/Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgb(229, 207, 250);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: 2px solid transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.modal-close:hover {
+    border-color: black;
+}
+
+.modal-product-image {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}

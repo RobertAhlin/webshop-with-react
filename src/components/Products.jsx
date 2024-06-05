@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/Api';
-import Modal from './Modal';
+import Modal from './ProductDetailModal';
 import './Products.css';
-import './Modal.css';
+import './ProductDetailModal.css';
 
 const Products = ({ addToCart }) => {
     const [products, setProducts] = useState([]);
