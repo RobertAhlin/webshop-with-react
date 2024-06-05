@@ -1,3 +1,5 @@
+//src/pages/Checkout.jsx
+
 import React, { useState, useRef, useEffect } from 'react';
 import OrderSummary from '../components/OrderSummary';
 import Address from '../components/Address';
@@ -47,6 +49,7 @@ const Checkout = ({ cartItems, setCartItems }) => {
     };
 
     if (showConfirmation) {
+        console.log('Shipping Address:', shippingAddress); // Ensure shippingAddress is defined here
         return <Confirmation shippingAddress={shippingAddress} />;
     }
 

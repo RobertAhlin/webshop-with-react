@@ -1,6 +1,10 @@
+// src/components/Confirmation.jsx
+
 import React from 'react';
+import './Confirmation.css';
 
 const Confirmation = ({ shippingAddress }) => {
+    console.log('Shipping Address:', shippingAddress);
     return (
         <div className="confirmation-message">
             <h2>Thank you for your order!</h2>

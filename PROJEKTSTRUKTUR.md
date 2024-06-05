@@ -1,3 +1,4 @@
+Current file structure:
 webshop-with-react/
 ├── public/
 │   ├── index.html
@@ -10,15 +11,18 @@ webshop-with-react/
 │   │   ├── Address.css
 │   │   ├── Address.jsx
 │   │   ├── AddToCartButton.jsx
+│   │   ├── Confirmation.jsx
+│   │   ├── ConfirmModal.css
+│   │   ├── ConfirmModal.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Header.css
 │   │   ├── Header.jsx
-│   │   ├── Modal.css
-│   │   ├── Modal.jsx
 │   │   ├── OrderSummary.css
 │   │   ├── OrderSummary.jsx
 │   │   ├── Payment.css
 │   │   ├── Payment.jsx
+│   │   ├── ProductDetailModal.css
+│   │   ├── ProductDetailModal.jsx
 │   │   ├── Products.css
 │   │   ├── Products.jsx
 │   │   ├── RemoveFromCartButton.jsx
@@ -29,6 +33,7 @@ webshop-with-react/
 │   ├── pages/
 │   │   ├── About.css
 │   │   ├── About.jsx
+│   │   ├── Checkout.css
 │   │   ├── Checkout.jsx
 │   │   └── Home.jsx
 │   ├── App.css

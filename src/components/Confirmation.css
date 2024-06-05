@@ -1,0 +1,22 @@
+/* src/components/Confirmation.css */
+
+.confirmation-message {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.confirmation-message h2 {
+    font-size: 24px;
+    color: #22f8f8;
+}
+
+.confirmation-message p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+}
+
+.confirmation-message p:last-child {
+    font-weight: bold;
+    color: #28a745;
+}

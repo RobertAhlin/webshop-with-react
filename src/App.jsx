@@ -62,7 +62,8 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home addToCart={addToCart} />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/checkout" element={<Checkout cartItems={cartItems} />} /> {/* Add Checkout route */}
+                    {/* Pass setCartItems as a prop to the Checkout component */}
+                    <Route path="/checkout" element={<Checkout cartItems={cartItems} setCartItems={setCartItems} />} />
                 </Routes>
             </main>
             <Footer />

@@ -1,12 +1,16 @@
 // Footer.jsx
 
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
         <footer className="center">
-            <p>Footer</p>
-            &copy; 2024 Robstar
+            <hr />
+            <div className="footer-text">
+                <p>Footer</p>
+                &copy; 2024 Robstar
+            </div>
         </footer>
     );
 };
