@@ -1,5 +1,5 @@
 // src/components/OrderSummary.jsx
-import React from 'react';
+
 import './OrderSummary.css';
 
 const OrderSummary = ({ cartItems }) => {

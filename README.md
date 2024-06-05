@@ -64,16 +64,26 @@ Just the main area where to navigate products. Aiming to use pagination.
 This is where to display the shopping cart where it should be easy to overview what's been added. Also easy to edit amount and remove products.
 
 ## Components
+- **Address**  
+Address.jsx provides a form component for collecting shipping address information, ensuring data integrity and validation before submission.  
 - **AddToCartButton**  
 The AddToCartButton component is a React component that renders a button. When clicked, it adds a given product to the cart. It takes two props: product (the item to add) and addToCart (the function to handle adding the item). The button's onClick event triggers the addToCart function with the product as an argument.
+- **Confirmation**   
+Gives a confirmation message when the purchase has been completed. 
+- **ConfirmModal**  
+ConfirmModal provides a simple modal component for confirming actions with customizable button labels and callbacks for handling user interactions.  
 - **Footer**  
 - **Header**  
+- **OrderSummary**  
+OrderSummary provides a component for displaying a summarized view of the items in the shopping cart, including their titles, quantities, individual prices, and the total price of all items combined.  
+- **Payment**  
+Payment is a reusable component that captures and validates credit card payment details, providing a user-friendly interface for users to input their card information.  
 - **ProductDetailModal**  
 The ProductDetailModal component is a React component that displays a modal dialog for a product. It accepts four props: isOpen, onClose, product, and addToCart.  
 If isOpen is false, the component returns null and nothing is rendered.  
 When open, it displays a modal overlay with the product's image, title, price, and description.  
 There are two buttons: one to close the modal (triggers onClose) and one to add the product to the cart (triggers addToCart with the product as an argument).  
-The component imports its styles from Modal.css.
+The component imports its styles from Modal.css.  
 - **Products**  
 The Products component is a React component that displays a list of products and includes a modal for viewing product details. Here's a summary of its functionality:  
 **State Management:**  
