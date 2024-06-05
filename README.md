@@ -139,3 +139,4 @@ To make it possible to search for items.
 
 ### Responsiveness
 Even if some level of responsivness is available. The resoponsiveness can be tested and improved for smaller devices such as mobile phones.
+* Make the siderbar with the shopping cart collapse and be expandable on smaller screens, like mobile phones.
