@@ -1,7 +1,7 @@
 import React from 'react';
-import './Modal.css';
+import './ConfirmModal.css';
 
-const Modal = ({ onClose, onConfirm }) => {
+const ConfirmModal = ({ onClose, onConfirm }) => {
     return (
         <div className="modal-overlay">
             <div className="modal">
@@ -14,4 +14,4 @@ const Modal = ({ onClose, onConfirm }) => {
     );
 };
 
-export default Modal;
+export default ConfirmModal;

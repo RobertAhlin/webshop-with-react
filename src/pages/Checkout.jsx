@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import OrderSummary from '../components/OrderSummary';
 import Address from '../components/Address';
 import Payment from '../components/Payment';
-import Modal from '../components/Modal';
+import ConfirmModal from '../components/ConfirmModal';
 import Confirmation from '../components/Confirmation';
 import './Checkout.css';
 
@@ -76,7 +76,7 @@ const Checkout = ({ cartItems, setCartItems }) => {
                 </button>
             )}
             {isModalVisible && (
-                <Modal 
+                <ConfirmModal 
                     onClose={handleModalClose} 
                     onConfirm={handleOrderConfirm}
                 />

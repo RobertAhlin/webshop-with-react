@@ -1,7 +1,7 @@
 // src/components/Modal.jsx
 
 import React from 'react';
-import './Modal.css';
+import './ProductDetailModal.css';
 
 const ProductDetailModal = ({ isOpen, onClose, product, addToCart }) => {
     if (!isOpen) return null;
