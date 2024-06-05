@@ -6,7 +6,7 @@
     left: 0;
     width: 100%; /* Make the header take up the full width */
     z-index: 1000; /* Ensure the header appears above other content */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Set the background color with transparency */
 
 }
 
@@ -30,13 +30,13 @@
     color: whitesmoke; /* Set the color of the logo */
     font-size: 1.5em; /* Adjust the size of the logo */
     font-weight: bold; /* Make the logo bold */
+    text-align: center; /* Center the logo */
 }
 
 .nav-links {
     display: flex;
     justify-content: center; /* Horizontally center the nav links */
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
+    padding: 0; /* Remove default padding */
   }
   
   .nav-links li {

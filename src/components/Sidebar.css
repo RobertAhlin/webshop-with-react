@@ -11,3 +11,11 @@
     height: 80%; /* Take up full height */
     margin-top: 80px;
   }
+
+  .sidebar h2 {
+    margin-top: 0;
+  }
+    
+  .sidebar li {
+    margin-bottom: 5px;
+  }

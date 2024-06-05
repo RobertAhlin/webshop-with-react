@@ -5,22 +5,4 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-attachment: fixed; /* Fix the background image in place */
   background-size: cover; /* Scale the background image to cover the entire background */
-
 }
-.sidebar h2 {
-  margin-top: 0;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
-}
-
-.center {
-  text-align: center;
-}
-
