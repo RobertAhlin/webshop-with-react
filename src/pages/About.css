@@ -1,0 +1,17 @@
+.about-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Black container with 80% opacity */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    color: white; /* White text for the heading */
+}
+
+.about-container p {
+    color: white; /* White text for the paragraph */
+    line-height: 1.6;
+}
