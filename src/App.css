@@ -1,8 +1,5 @@
-/* App.css */
-
 /* src/App.css */
 
-/* Apply the background image to the root container */
 body {
   background-image: url('./assets/webshop-background.jpg');
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -27,17 +24,3 @@ body {
   text-align: center;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: center; /* Horizontally center the nav links */
-  list-style-type: none; /* Remove bullet points */
-  padding: 0;
-}
-
-.nav-links li {
-  margin-right: 20px; /* Add spacing between links */
-}
-
-.nav-links li:last-child {
-  margin-right: 0; /* Remove right margin from the last link */
-}

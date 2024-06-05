@@ -1,15 +1,9 @@
-/* Product.css */
-
-.header {
-    margin-left: 5vw;
-    padding-left: 10px;
-}
-
 .product-list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 5vw;
     max-width: 70%;
+    padding-top: 80px;
 }
 
 .product-container {
@@ -27,7 +21,6 @@
 .product-container:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
     background-color: rgb(232, 223, 250);
-    
 }
 
 .product-image {
@@ -38,7 +31,6 @@
 .show-more-container {
     display: flex;
     justify-content: left;
-    margin-top: 20px;
     margin-left: 6vw;
 }
 

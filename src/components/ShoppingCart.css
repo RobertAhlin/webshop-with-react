@@ -15,7 +15,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 60vh;
+    max-height: 67vh;
     overflow-y: auto;  /* Enable vertical scrolling */
     scrollbar-width: thin;  /* Set the width of the scrollbar */
     scrollbar-color: #888888 #1b1b1b;  /* Set the color of the scrollbar */
