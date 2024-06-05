@@ -1,19 +1,24 @@
 //src/components/Address.jsx
 
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import './Address.css';
 
 const Address = ({ onFormValidation }) => {
     const [address, setAddress] = useState('');
     const [name, setName] = useState('');
-    const [isFormValid, setIsFormValid] = useState(false);
+    const [email, setEmail] = useState('');
 
     useEffect(() => {
-        const isValid = address !== '' && name !== '';
-        setIsFormValid(isValid);
+        const isValid = address.trim() !== '' && name.trim() !== '' && email.trim() !== '' && validateEmail(email);
         onFormValidation(isValid, address);
-    }, [address, name, onFormValidation]);
+    }, [address, name, email, onFormValidation]);
+
+    // Function to validate email format
+    const validateEmail = (email) => {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    };
 
     return (
         <div className="address-form">
@@ -24,6 +29,14 @@ const Address = ({ onFormValidation }) => {
                     type="text" 
                     value={name} 
                     onChange={(e) => setName(e.target.value)} 
+                />
+            </label>
+            <label>
+                Email:
+                <input 
+                    type="email" 
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)} 
                 />
             </label>
             <label>
@@ -39,7 +52,7 @@ const Address = ({ onFormValidation }) => {
 };
 
 Address.propTypes = {
-    onFormValidation: PropTypes.func.isRequired // Ensure onFormValidation is a function and required
+    onFormValidation: PropTypes.func.isRequired
 };
 
 export default Address;
