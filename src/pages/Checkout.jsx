@@ -49,9 +49,8 @@ const Checkout = ({ cartItems, setCartItems }) => {
     };
 
     if (showConfirmation) {
-        console.log('Shipping Address:', shippingAddress); // Ensure shippingAddress is defined here
-        return <Confirmation shippingAddress={shippingAddress} />;
-    }
+    return <Confirmation shippingAddress={shippingAddress} />;
+}
 
     return (
         <div className="checkout-page">
