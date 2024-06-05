@@ -1,0 +1,23 @@
+/* src/components/Header.css */
+
+/* General link styles */
+.nav-link {
+    color: white; /* Default color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: lightblue; /* Color when hovering */
+}
+
+/* Active link effect */
+.nav-link:active, .nav-link.active {
+    color: lightgray; /* Color when the link is active */
+}
+
+.logo {
+    color: whitesmoke; /* Set the color of the logo */
+    font-size: 1.5em; /* Adjust the size of the logo */
+    font-weight: bold; /* Make the logo bold */
+}

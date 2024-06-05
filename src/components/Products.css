@@ -13,6 +13,7 @@
 }
 
 .product-container {
+    background-color: rgba(222, 214, 238, 0.95);
     max-width: 150px;
     margin: 0.8vw;
     padding: 10px;
@@ -20,16 +21,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: box-shadow 0.3s ease-in-out;
     list-style-type: none;
-    cursor: pointer; /* Added cursor pointer */
+    cursor: pointer;
 }
 
 .product-container:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    background-color: rgb(232, 223, 250);
+    
 }
 
 .product-image {
-    border-radius: 8px;
-    object-fit: cover;
     width: 100%; /* Ensure image fits the container */
     height: auto; /* Maintain aspect ratio */
 }

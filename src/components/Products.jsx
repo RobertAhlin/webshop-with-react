@@ -52,7 +52,6 @@ const Products = ({ addToCart }) => {
 
     return (
         <div>
-            <h2 className='header'>Featured Products</h2>
             <ul className='product-list'>
                 {products.slice(0, displayedProducts).map(product => (
                     <li key={product.id} className='product-container' onClick={() => openModal(product)}>

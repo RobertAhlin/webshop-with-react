@@ -1,27 +1,15 @@
+/* App.css */
 
 /* src/App.css */
 
 /* Apply the background image to the root container */
 body {
   background-image: url('./assets/webshop-background.jpg');
-  background-size: cover; /* Cover the entire viewport */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-attachment: fixed; /* Fix the background image in place */
-  /* You can adjust other background properties as needed */
-}
+  background-size: cover; /* Scale the background image to cover the entire background */
 
-.sidebar {
-  width: 250px;
-  padding: 20px;
-  border-left: 1px solid #ddd;
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background: #f9f9f9;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
-
 .sidebar h2 {
   margin-top: 0;
 }
@@ -52,18 +40,4 @@ body {
 
 .nav-links li:last-child {
   margin-right: 0; /* Remove right margin from the last link */
-}
-
-.sidebar {
-  width: 25vw;
-  max-width: 300px;
-  background-color: rgba(51, 51, 51, 0.8); /* Use RGBA color for transparency */
-  color: #fff;
-  text-align: center; /* Center the text horizontally */
-  padding: 20px;
-  position: fixed; /* Fix the position */
-  top: 0; /* Align to the top */
-  right: 0; /* Align to the right */
-  height: 100%; /* Take up full height */
-  margin-top: 100px;
 }
