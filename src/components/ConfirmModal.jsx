@@ -1,5 +1,6 @@
 // src/components/ConfirmModal.jsx
 
+import PropTypes from 'prop-types';
 import './ConfirmModal.css';
 
 const ConfirmModal = ({ onClose, onConfirm }) => {
@@ -13,6 +14,11 @@ const ConfirmModal = ({ onClose, onConfirm }) => {
             </div>
         </div>
     );
+};
+
+ConfirmModal.propTypes = {
+    onClose: PropTypes.func.isRequired,
+    onConfirm: PropTypes.func.isRequired,
 };
 
 export default ConfirmModal;
