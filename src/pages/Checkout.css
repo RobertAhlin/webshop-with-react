@@ -6,7 +6,7 @@
 .purchase-button {
     width: 500px;
     display: block;
-    background-color: #007bff;
+    background-color: #28a745;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -17,7 +17,7 @@
 }
 
 .purchase-button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 
