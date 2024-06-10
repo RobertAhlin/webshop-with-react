@@ -1,6 +1,7 @@
 {
   "name": "webshop-with-react",
   "private": true,
+  "homepage": "https://robertahlin.github.io/webshop-with-react/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
