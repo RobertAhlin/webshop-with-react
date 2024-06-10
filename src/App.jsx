@@ -72,7 +72,7 @@ const App = () => {
 };
 
 const AppWrapper = () => (
-    <Router>
+    <Router basename='/webshop-with-react'>
         <App />
     </Router>
 );
