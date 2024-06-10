@@ -1,5 +1,6 @@
 # Webshop project
 This is a webshop project to be used for learning to handle React during educaion in Full stack development at Företagsuniversitet.
+<img src="readmefiles/webshop-screenshot.jpg">
 
 # Github
 The project can be found at this repo: https://github.com/RobertAhlin/webshop-with-react.
@@ -146,7 +147,7 @@ The Sidebar component renders a sidebar that includes the ShoppingCart component
 * Track order progress page.
 
 ### Searchbar
-To make it possible to search for items.
+* To make it possible to search for items.
 
 ### Responsiveness
 Even if some level of responsivness is available. The resoponsiveness can be tested and improved for smaller devices such as mobile phones.
