@@ -123,9 +123,10 @@ Includes buttons for adjusting the quantity of each item and a button to remove 
 The Sidebar component renders a sidebar that includes the ShoppingCart component, displaying the items in the cart along with options to adjust their quantities or remove them.
 
 # Credits
-- https://reactrouter.com/en/main
-- https://chat.openai.com
-- https://vitejs.dev/
+- https://reactrouter.com/en/main - Documentation
+- https://chat.openai.com - Troubleshooting and get code snippets.
+- https://vitejs.dev/ - Vite documentaion
+- https://github.com/orgs/community/discussions/36010 - For the help to get the Pages on Github working
 
 # To do
 (To do list items will be removed when done. New might be added from Future development section.)
