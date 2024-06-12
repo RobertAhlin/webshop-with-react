@@ -1,4 +1,5 @@
 // src/App.jsx
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
@@ -62,7 +63,6 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home addToCart={addToCart} />} />
                     <Route path="/about" element={<About />} />
-                    {/* Pass setCartItems as a prop to the Checkout component */}
                     <Route path="/checkout" element={<Checkout cartItems={cartItems} setCartItems={setCartItems} />} />
                 </Routes>
             </main>

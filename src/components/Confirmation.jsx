@@ -1,9 +1,16 @@
 // src/components/Confirmation.jsx
 
+import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Confirmation.css';
 
-const Confirmation = () => {
+const Confirmation = ({ setCartItems }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        setCartItems([]); // Clear cart items state
+        localStorage.removeItem('cartItems'); // Clear local storage
+    }, [setCartItems]);
+
     return (
         <div className="confirmation-message">
             <h2>Thank you for your order!</h2>

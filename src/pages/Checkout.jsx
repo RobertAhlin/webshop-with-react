@@ -1,4 +1,4 @@
-//src/pages/Checkout.jsx
+// src/pages/Checkout.jsx
 
 import React, { useState, useRef, useEffect } from 'react';
 import OrderSummary from '../components/OrderSummary';
@@ -39,7 +39,8 @@ const Checkout = ({ cartItems, setCartItems }) => {
 
     const handleOrderConfirm = () => {
         setIsModalVisible(false);
-        setCartItems([]);
+        setCartItems([]); // Clear cart items state
+        localStorage.removeItem('cartItems'); // Clear local storage
         setShowConfirmation(true);
     };
 
@@ -49,8 +50,8 @@ const Checkout = ({ cartItems, setCartItems }) => {
     };
 
     if (showConfirmation) {
-    return <Confirmation shippingAddress={shippingAddress} />;
-}
+        return <Confirmation setCartItems={setCartItems} />;
+    }
 
     return (
         <div className="checkout-page">
