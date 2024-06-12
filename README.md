@@ -152,3 +152,6 @@ The Sidebar component renders a sidebar that includes the ShoppingCart component
 ### Responsiveness
 Even if some level of responsivness is available. The resoponsiveness can be tested and improved for smaller devices such as mobile phones.
 * Make the siderbar with the shopping cart collapse and be expandable on smaller screens, like mobile phones.
+
+### Currency Converter
+* Get current convert rate for other currencys from an API and make the user select what currency the prices should be shown in.
