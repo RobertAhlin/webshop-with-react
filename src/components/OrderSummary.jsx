@@ -1,5 +1,3 @@
-// src/components/OrderSummary.jsx
-
 import './OrderSummary.css';
 
 const OrderSummary = ({ cartItems }) => {

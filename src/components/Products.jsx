@@ -1,5 +1,3 @@
-// src/components/Products.jsx
-
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/Api';
 import Modal from './ProductDetailModal';

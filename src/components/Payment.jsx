@@ -1,5 +1,3 @@
-// src/components/Payment.jsx
-
 import { useState, useEffect } from 'react';
 import './Payment.css';
 

@@ -1,5 +1,3 @@
-// src/components/Address.jsx
-
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Address.css';

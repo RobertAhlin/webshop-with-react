@@ -1,5 +1,3 @@
-// src/pages/Checkout.jsx
-
 import React, { useState, useRef, useEffect } from 'react';
 import OrderSummary from '../components/OrderSummary';
 import Address from '../components/Address';

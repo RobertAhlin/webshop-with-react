@@ -1,8 +1,7 @@
-// src/components/ConfirmModal.jsx
-
 import PropTypes from 'prop-types';
 import './ConfirmModal.css';
 
+// ConfirmModal component
 const ConfirmModal = ({ onClose, onConfirm }) => {
     return (
         <div className="modal-overlay">
@@ -16,6 +15,7 @@ const ConfirmModal = ({ onClose, onConfirm }) => {
     );
 };
 
+// Prop types for ConfirmModal component
 ConfirmModal.propTypes = {
     onClose: PropTypes.func.isRequired,
     onConfirm: PropTypes.func.isRequired,

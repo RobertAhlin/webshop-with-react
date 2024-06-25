@@ -1,5 +1,3 @@
-// Footer.jsx
-
 import './Footer.css';
 
 // Footer component

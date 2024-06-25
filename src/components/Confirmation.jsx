@@ -1,5 +1,3 @@
-// src/components/Confirmation.jsx
-
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Confirmation.css';
