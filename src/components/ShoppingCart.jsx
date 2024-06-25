@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ShoppingCart.css';
 
+// ShoppingCart component
 const ShoppingCart = ({ cartItems, removeFromCart, adjustQuantity }) => {
     // Calculate total sum of prices
     const totalSum = cartItems.reduce((total, item) => total + (item.price * item.count), 0);

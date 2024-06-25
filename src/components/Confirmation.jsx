@@ -6,7 +6,7 @@ import './Confirmation.css';
 
 const Confirmation = ({ setCartItems }) => {
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0); // Scroll to the top of the page
         setCartItems([]); // Clear cart items state
         localStorage.removeItem('cartItems'); // Clear local storage
     }, [setCartItems]);

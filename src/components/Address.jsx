@@ -1,15 +1,16 @@
-//src/components/Address.jsx
+// src/components/Address.jsx
 
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Address.css';
 
 const Address = ({ onFormValidation }) => {
-    const [address, setAddress] = useState('');
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState(''); // State for address
+    const [name, setName] = useState(''); // State for name
+    const [email, setEmail] = useState(''); // State for email
 
     useEffect(() => {
+        // Function to validate form fields and check if they are not empty and email is valid
         const isValid = address.trim() !== '' && name.trim() !== '' && email.trim() !== '' && validateEmail(email);
         onFormValidation(isValid, address);
     }, [address, name, email, onFormValidation]);

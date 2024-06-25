@@ -2,6 +2,7 @@
 
 import './Footer.css';
 
+// Footer component
 const Footer = () => {
     return (
         <footer className="center">
